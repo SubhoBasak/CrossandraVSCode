@@ -1,0 +1,76 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Crossandra",
+  "patterns": [
+    { "include": "#identifier" },
+    { "include": "#state" },
+    { "include": "#keywords" }
+  ],
+  "repository": {
+    "identifier": {
+      "name": "support.function",
+      "match": "^[.#][a-zA-Z][a-zA-Z0-9]*"
+    },
+    "state": {
+      "patterns": [
+        {
+          "name": "support.type",
+          "match": "@"
+        },
+        {
+          "name": "support.type",
+          "match": "\\b(focus|hover|active|deactive|dark|sm|md|lg|xl)\\b"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "support.variable",
+          "match": "\\b(w-25|w-50|w-75|w-100|min-w-25|min-w-50|min-w-75|min-w-100|max-w-25|max-w-50|max-w-75|max-w-100|h-25|h-50|h-75|h-100|min-h-25|min-h-50|min-h-75|min-h-100|max-h-25|max-h-50|max-h-75|max-h-100|overflow-auto|overflow-hide|overflow-scroll|overflow-visible|overflow-x-auto|overflow-x-hide|overflow-x-scroll|overflow-x-visible|overflow-y-auto|overflow-y-hide|overflow-y-scroll|overflow-y-visible|fit-contain|fit-cover|fit-fill|fit-scale)\\b"
+        },
+        {
+          "name": "support.variable",
+          "match": "\\b(m-0|m-1|m-2|m-3|m-4|m-5|m-a|mx-0|mx-1|mx-2|mx-3|mx-4|mx-5|mx-a|my-0|my-1|my-2|my-3|my-4|my-5|my-a|mt-0|mt-1|mt-2|mt-3|mt-4|mt-5|mt-a|ml-0|ml-1|ml-2|ml-3|ml-4|ml-5|ml-a|mr-0|mr-1|mr-2|mr-3|mr-4|mr-5|mr-a|mb-0|mb-1|mb-2|mb-3|mb-4|mb-5|mb-a)\\b"
+        },
+        {
+          "name": "support.variable",
+          "match": "\\b(p-0|p-1|p-2|p-3|p-4|p-5|p-a|px-0|px-1|px-2|px-3|px-4|px-5|px-a|py-0|py-1|py-2|py-3|py-4|py-5|py-a|pt-0|pt-1|pt-2|pt-3|pt-4|pt-5|pt-a|pl-0|pl-1|pl-2|pl-3|pl-4|pl-5|pl-a|pr-0|pr-1|pr-2|pr-3|pr-4|pr-5|pr-a|pb-0|pb-1|pb-2|pb-3|pb-4|pb-5|pb-a)\\b"
+        },
+        {
+          "name": "support.variable",
+          "match": "\\b(pos-rl|pos-ab|pos-fx|pos-st|top-0|top-25|top-50|top-75|top-100|left-0|left-25|left-50|left-75|left-100|right-0|right-25|right-50|right-75|right-100|bottom-0|bottom-25|bottom-50|bottom-75|bottom-100|z-0|z-1|z-2|z-3|z-4|z-5)\\b"
+        },
+        {
+          "name": "support.variable",
+          "match": "\\b(bg-100|bg-200|bg-300|bg-400|bg-500|bg-700|bg-900|bg-primary|bg-secondary|bg-info|bg-success|bg-warning|bg-danger|bg-disable|bg-primary-light|bg-secondary-light|bg-info-light|bg-success-light|bg-warning-light|bg-danger-light|bg-disable-light|bg-primary-dark|bg-secondary-dark|bg-info-dark|bg-success-dark|bg-warning-dark|bg-danger-dark|bg-disable-dark|color-100|color-200|color-300|color-400|color-500|color-700|color-900|color-primary|color-secondary|color-info|color-success|color-warning|color-danger|color-disable|color-primary-light|color-secondary-light|color-info-light|color-success-light|color-warning-light|color-danger-light|color-disable-light|color-primary-dark|color-secondary-dark|color-info-dark|color-success-dark|color-warning-dark|color-danger-dark|color-disable-dark|border-100|border-200|border-300|border-400|border-500|border-700|border-900|border-primary|border-secondary|border-info|border-success|border-warning|border-danger|border-disable|border-primary-light|border-secondary-light|border-info-light|border-success-light|border-warning-light|border-danger-light|border-disable-light|border-primary-dark|border-secondary-dark|border-info-dark|border-success-dark|border-warning-dark|border-danger-dark|border-disable-dark|bg-op-0|bg-op-25|bg-op-50|bg-op-75|bg-op-100|color-op-0|color-op-25|color-op-50|color-op-75|color-op-100|border-op-0|border-op-25|border-op-50|border-op-75|border-op-100)\\b"
+        },
+        {
+          "name": "support.variable",
+          "match": "\\b(round-0|round-1|round-2|round-3|round-4|round-5|round-top-0|round-top-1|round-top-2|round-top-3|round-top-4|round-top-5|round-left-0|round-left-1|round-left-2|round-left-3|round-left-4|round-left-5|round-right-0|round-right-1|round-right-2|round-right-3|round-right-4|round-right-5|round-bottom-0|round-bottom-1|round-bottom-2|round-bottom-3|round-bottom-4|round-bottom-5|round-top-left-0|round-top-left-1|round-top-left-2|round-top-left-3|round-top-left-4|round-top-left-5|round-top-right-0|round-top-right-1|round-top-right-2|round-top-right-3|round-top-right-4|round-top-right-5|round-bottom-left-0|round-bottom-left-1|round-bottom-left-2|round-bottom-left-3|round-bottom-left-4|round-bottom-left-5|round-bottom-right-0|round-bottom-right-1|round-bottom-right-2|round-bottom-right-3|round-bottom-right-4|round-bottom-right-5)\\b"
+        },
+        {
+          "name": "support.variable",
+          "match": "\\b(bw-0|bw-1|bw-2|bw-3|bw-4|bw-5|bw-x-0|bw-x-1|bw-x-2|bw-x-3|bw-x-4|bw-x-5|bw-y-0|bw-y-1|bw-y-2|bw-y-3|bw-y-4|bw-y-5|bw-top-0|bw-top-1|bw-top-2|bw-top-3|bw-top-4|bw-top-5|bw-left-0|bw-left-1|bw-left-2|bw-left-3|bw-left-4|bw-left-5|bw-right-0|bw-right-1|bw-right-2|bw-right-3|bw-right-4|bw-right-5|bw-bottom-0|bw-bottom-1|bw-bottom-2|bw-bottom-3|bw-bottom-4|bw-bottom-5)\\b"
+        },
+        {
+          "name": "support.variable",
+          "match": "\\b(text-align-center|text-align-left|text-align-right|text-align-justify|text-deco-none|text-deco-line|text-deco-underline|lh-1|lh-2|lh-3|lh-4|lh-5|fw-normal|fw-bold|fw-light|fw-medium|fs-1|fs-2|fs-3|fs-4|fs-5|fs-6|fs-h1|fs-h2|fs-h3|fs-h4|fs-h5|fs-h6)\\b"
+        },
+        {
+          "name": "support.variable",
+          "match": "\\b(d-none|d-flex|d-block|d-inline|flex-row|flex-column|flex-wrap|flex-nowrap|flex-grow-0|flex-grow-1|flex-grow-2|flex-grow-3|flex-grow-4|flex-grow-5|jc-center|jc-start|jc-end|jc-between|jc-around|jc-even|ai-center|ai-start|ai-end)\\b"
+        },
+        {
+          "name": "support.variable",
+          "match": "\\b(delay-0|delay-1|delay-2|delay-3|delay-4|delay-5|move-up-0|move-up-1|move-up-2|move-up-3|move-up-4|move-up-5|move-down-0|move-down-1|move-down-2|move-down-3|move-down-4|move-down-5|move-left-0|move-left-1|move-left-2|move-left-3|move-left-4|move-left-5|move-right-0|move-right-1|move-right-2|move-right-3|move-right-4|move-right-5|scale-down-2|scale-down-1|scale-normal|scale-up-1|scale-up-2)\\b"
+        },
+        {
+          "name": "support.variable",
+          "match": "\\b(shadow-0|shadow-1|shadow-2|shadow-3|shadow-4|shadow-5|shadow-light-1|shadow-light-2|shadow-light-3|shadow-light-4|shadow-light-5|back-blur-0|back-blur-1|back-blur-2|back-blur-3|back-blur-4|back-blur-5)\\b"
+        }
+      ]
+    }
+  },
+  "scopeName": "source.crss"
+}

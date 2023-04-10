@@ -1,0 +1,44 @@
+{
+  "icon": "crss.png",
+  "name": "crossandra",
+  "author": {
+    "name": "SubhoBasak",
+    "email": "subhobasak50@gmail.com",
+    "url": "https://subhobasak.github.io/SubhoBasak"
+  },
+  "displayName": "Crossandra",
+  "description": "Syntax highlighting for crossandra",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "crossandra",
+        "aliases": [
+          "Crossandra",
+          "crossandra"
+        ],
+        "extensions": [
+          ".crss"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "crossandra",
+        "scopeName": "source.crss",
+        "path": "./syntaxes/crossandra.tmLanguage.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SubhoBasak/CrossandraVSCode"
+  }
+}
