@@ -19,7 +19,7 @@
         },
         {
           "name": "support.type",
-          "match": "\\b(focus|hover|active|deactive|dark|sm|md|lg|xl)\\b"
+          "match": "[ \t]\\b(focus|hover|active|deactive|dark|sm|md|lg|xl)\\b"
         }
       ]
     },
@@ -27,7 +27,11 @@
       "patterns": [
         {
           "name": "support.variable",
-          "match": "\\b(w-25|w-50|w-75|w-100|min-w-25|min-w-50|min-w-75|min-w-100|max-w-25|max-w-50|max-w-75|max-w-100|h-25|h-50|h-75|h-100|min-h-25|min-h-50|min-h-75|min-h-100|max-h-25|max-h-50|max-h-75|max-h-100|overflow-auto|overflow-hide|overflow-scroll|overflow-visible|overflow-x-auto|overflow-x-hide|overflow-x-scroll|overflow-x-visible|overflow-y-auto|overflow-y-hide|overflow-y-scroll|overflow-y-visible|fit-contain|fit-cover|fit-fill|fit-scale)\\b"
+          "match": "\\b(w-5|w-10|w-15|w-20|w-25|w-30|w-35|w-40|w-45|w-50|w-55|w-60|w-65|w-70|w-75|w-80|w-85|w-90|w-95|w-100|min-w-5|min-w-10|min-w-15|min-w-20|min-w-25|min-w-30|min-w-35|min-w-40|min-w-45|min-w-50|min-w-55|min-w-60|min-w-65|min-w-70|min-w-75|min-w-80|min-w-85|min-w-90|min-w-95|min-w-100|max-w-5|max-w-10|max-w-15|max-w-20|max-w-25|max-w-30|max-w-35|max-w-40|max-w-45|max-w-50|max-w-55|max-w-60|max-w-65|max-w-70|max-w-75|max-w-80|max-w-85|max-w-90|max-w-95|max-w-100|h-5|h-10|h-15|h-20|h-25|h-30|h-35|h-40|h-45|h-50|h-55|h-60|h-65|h-70|h-75|h-80|h-85|h-90|h-95|h-100|min-h-5|min-h-10|min-h-15|min-h-20|min-h-25|min-h-30|min-h-35|min-h-40|min-h-45|min-h-50|min-h-55|min-h-60|min-h-65|min-h-70|min-h-75|min-h-80|min-h-85|min-h-90|min-h-95|min-h-100|max-h-5|max-h-10|max-h-15|max-h-20|max-h-25|max-h-30|max-h-35|max-h-40|max-h-45|max-h-50|max-h-55|max-h-60|max-h-65|max-h-70|max-h-75|max-h-80|max-h-85|max-h-90|max-h-95|max-h-100)\\b"
+        },
+        {
+          "name": "support.variable",
+          "match": "\\b(overflow-auto|overflow-hide|overflow-scroll|overflow-visible|overflow-x-auto|overflow-x-hide|overflow-x-scroll|overflow-x-visible|overflow-y-auto|overflow-y-hide|overflow-y-scroll|overflow-y-visible|fit-contain|fit-cover|fit-fill|fit-scale)\\b"
         },
         {
           "name": "support.variable",
@@ -43,7 +47,11 @@
         },
         {
           "name": "support.variable",
-          "match": "\\b(bg-100|bg-200|bg-300|bg-400|bg-500|bg-700|bg-900|bg-primary|bg-secondary|bg-info|bg-success|bg-warning|bg-danger|bg-disable|bg-primary-light|bg-secondary-light|bg-info-light|bg-success-light|bg-warning-light|bg-danger-light|bg-disable-light|bg-primary-dark|bg-secondary-dark|bg-info-dark|bg-success-dark|bg-warning-dark|bg-danger-dark|bg-disable-dark|color-100|color-200|color-300|color-400|color-500|color-700|color-900|color-primary|color-secondary|color-info|color-success|color-warning|color-danger|color-disable|color-primary-light|color-secondary-light|color-info-light|color-success-light|color-warning-light|color-danger-light|color-disable-light|color-primary-dark|color-secondary-dark|color-info-dark|color-success-dark|color-warning-dark|color-danger-dark|color-disable-dark|border-100|border-200|border-300|border-400|border-500|border-700|border-900|border-primary|border-secondary|border-info|border-success|border-warning|border-danger|border-disable|border-primary-light|border-secondary-light|border-info-light|border-success-light|border-warning-light|border-danger-light|border-disable-light|border-primary-dark|border-secondary-dark|border-info-dark|border-success-dark|border-warning-dark|border-danger-dark|border-disable-dark|bg-op-0|bg-op-25|bg-op-50|bg-op-75|bg-op-100|color-op-0|color-op-25|color-op-50|color-op-75|color-op-100|border-op-0|border-op-25|border-op-50|border-op-75|border-op-100)\\b"
+          "match": "\\b(bg-100|bg-200|bg-300|bg-400|bg-500|bg-700|bg-900|bg-primary-light|bg-secondary-light|bg-info-light|bg-success-light|bg-warning-light|bg-danger-light|bg-disable-light|bg-primary-dark|bg-secondary-dark|bg-info-dark|bg-success-dark|bg-warning-dark|bg-danger-dark|bg-disable-dark|bg-primary|bg-secondary|bg-info|bg-success|bg-warning|bg-danger|bg-disable|color-100|color-200|color-300|color-400|color-500|color-700|color-900|color-primary-light|color-secondary-light|color-info-light|color-success-light|color-warning-light|color-danger-light|color-disable-light|color-primary-dark|color-secondary-dark|color-info-dark|color-success-dark|color-warning-dark|color-danger-dark|color-disable-dark|color-primary|color-secondary|color-info|color-success|color-warning|color-danger|color-disable|border-100|border-200|border-300|border-400|border-500|border-700|border-900|border-primary-light|border-secondary-light|border-info-light|border-success-light|border-warning-light|border-danger-light|border-disable-light|border-primary-dark|border-secondary-dark|border-info-dark|border-success-dark|border-warning-dark|border-danger-dark|border-disable-dark|border-primary|border-secondary|border-info|border-success|border-warning|border-danger|border-disable|bg-op-0|bg-op-25|bg-op-50|bg-op-75|bg-op-100|color-op-0|color-op-25|color-op-50|color-op-75|color-op-100|border-op-0|border-op-25|border-op-50|border-op-75|border-op-100)\\b"
+        },
+        {
+          "name": "support.variable",
+          "match": "\\b(grad-light-top-1|grad-light-top-2|grad-light-top-3|grad-light-top-4|grad-light-top-5|grad-light-left-1|grad-light-left-2|grad-light-left-3|grad-light-left-4|grad-light-left-5|grad-light-right-1|grad-light-right-2|grad-light-right-3|grad-light-right-4|grad-light-right-5|grad-light-bottom-1|grad-light-bottom-2|grad-light-bottom-3|grad-light-bottom-4|grad-light-bottom-5|grad-dark-top-1|grad-dark-top-2|grad-dark-top-3|grad-dark-top-4|grad-dark-top-5|grad-dark-left-1|grad-dark-left-2|grad-dark-left-3|grad-dark-left-4|grad-dark-left-5|grad-dark-right-1|grad-dark-right-2|grad-dark-right-3|grad-dark-right-4|grad-dark-right-5|grad-dark-bottom-1|grad-dark-bottom-2|grad-dark-bottom-3|grad-dark-bottom-4|grad-dark-bottom-5)\\b"
         },
         {
           "name": "support.variable",

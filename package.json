@@ -1,6 +1,7 @@
 {
   "icon": "crss.png",
   "name": "crossandra",
+  "publisher": "SubhoBasak",
   "author": {
     "name": "SubhoBasak",
     "email": "subhobasak50@gmail.com",
@@ -8,7 +9,7 @@
   },
   "displayName": "Crossandra",
   "description": "Syntax highlighting for crossandra",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.77.0"
   },
@@ -26,7 +27,11 @@
         "extensions": [
           ".crss"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "dark": "crss.png",
+          "light": "crss.png"
+        }
       }
     ],
     "grammars": [
